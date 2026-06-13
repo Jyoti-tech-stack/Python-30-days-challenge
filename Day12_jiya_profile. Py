@@ -1,0 +1,26 @@
+def print_profile(profile):
+    print("=== JIYA'S DEV PROFILE ===")
+    for key in profile:
+        print(f"{key}: {profile[key]}")
+
+def update_streak(profile, days):
+    profile["Streak"] = f"{days} Days"
+    profile["Status"] = "Future AI Engineer 🔥"
+    return profile
+
+jiya = {
+    "Name": "Jiya",
+    "College": "IFTM Moradabad",
+    "Course": "BTech AI",
+    "Year": "1st Year",
+    "Skills": ["Python", "GitHub", "Functions", "Lists", "Dict"],
+    "Dream Company": "Google DeepMind",
+    "Target 2026": "AI/ML Intern",
+    "Target 2030": "70 LPA AI Engineer",
+    "Streak": "12 Days"
+}
+
+jiya = update_streak(jiya, 12)
+print_profile(jiya)
+print("\nDay 12 Done: Dictionary + AI Engineer mindset ✅")
+print("IFTM BTech AI → Google DeepMind. Route set 🚀")
