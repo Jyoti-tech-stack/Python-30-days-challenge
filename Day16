@@ -1,0 +1,8 @@
+n = 5
+
+for i in range(n, 0, -1):
+    # spaces print karo
+    print(" " * (n-i), end="")
+    
+    # stars print karo
+    print("*" * (2*i - 1))
