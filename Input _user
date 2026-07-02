@@ -1,0 +1,34 @@
+# Jiya Pal - Day 3: User Input in Python
+# IFTM University | Target: IAS + Google 2030 🇮🇳💻
+
+print("=== JIYA PAL KA INPUT PROGRAM ===")
+
+# 1. String input
+name = input("Naam likho: ")
+
+# 2. Integer input 
+age = int(input("Age likho: "))
+
+# 3. Float input
+cgpa = float(input("CGPA likho: "))
+
+print("\n=== OUTPUT ===")
+print("Name:", name, "| Type:", type(name))
+print("Age:", age, "| Type:", type(age))
+print("CGPA:", cgpa, "| Type:", type(cgpa))
+print(f"\n{name}, {age} saal, {cgpa} CGPA - IAS 2030 pakka 💯")
+
+'''
+=== SAMPLE OUTPUT ===
+=== JIYA PAL KA INPUT PROGRAM ===
+Naam likho: Jiya Pal
+Age likho: 17
+CGPA likho: 9.8
+
+=== OUTPUT ===
+Name: Jiya Pal | Type: <class 'str'>
+Age: 17 | Type: <class 'int'>
+CGPA: 9.8 | Type: <class 'float'>
+
+Jiya Pal, 17 saal, 9.8 CGPA - IAS 2030 pakka 💯
+'''
