@@ -1,0 +1,11 @@
+# Jiya Pal - Day 4: If Statement
+x = 10
+if x > 5:
+    print("x is greater than 5")  # 4 space andar
+else:
+    print("x is 5 ya chota")
+
+'''
+OUTPUT: x is greater than 5
+Didi Note: If ke baad : lagta, niche 4 space
+'''
