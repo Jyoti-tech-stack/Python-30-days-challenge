@@ -1,0 +1,34 @@
+# Day 29 - Encapsulation in OOPs
+# Private data ko bahar se direct access nahi karne dena
+
+class BankAccount:
+    def __init__(self, name, balance):
+        self.name = name           # public
+        self.__balance = balance   # private - __ lagane se private ho jata hai
+    
+    def deposit(self, amount):
+        self.__balance = self.__balance + amount
+        print(f"{amount} deposit ho gaye")
+    
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            self.__balance = self.__balance - amount
+            print(f"{amount} nikal liye")
+        else:
+            print("Balance kam hai!")
+    
+    def check_balance(self):
+        print(f"Total Balance: {self.__balance}")
+
+
+# Object banana
+acc1 = BankAccount("Jiya", 5000)
+
+acc1.deposit(2000)
+acc1.withdraw(1000)
+acc1.check_balance()
+
+print("\n")
+
+# Ye galat hai - private ko direct access nahi kar sakte
+# print(acc1.__balance)  # ERROR aayega
